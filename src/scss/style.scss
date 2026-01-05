@@ -1,0 +1,124 @@
+$bg-color:#333;
+$font-color:#fff;
+$primary-color:#008ed6;
+$dark-overlay: rgba(0,0,0,0.7);
+$icon-size:30px;
+
+body{
+  background:$bg-color;
+  color:$font-color;
+}
+
+.navbar{
+  border-bottom:$primary-color 3px solid;
+  opacity:0.8;
+}
+
+#home-section{
+  background:url('../img/BCIT.jpg') no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  min-height:700px;
+
+  abbr[title] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    #profile{
+      margin: 0 auto;
+      text-align: center;
+      font-size: 18pt;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    #profile{
+      margin: 0 auto;
+      text-align: center;
+      font-size: 13pt;
+    }
+  }
+
+  @media (min-width: 1201px){
+    #profile{
+      margin: 0 auto;
+      text-align: center;
+      font-size: 13pt;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 991px) {
+    #profile{
+      margin: 0 auto;
+      text-align: center;
+      font-size: 25pt;
+    }
+  }
+
+  #checktext{
+    font-size: 14pt;
+  }
+
+
+
+
+
+  .dark-overlay{
+    background-color:$dark-overlay;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    min-height:700px;
+  }
+
+  .home-inner{
+    padding-top:125px;
+  }
+
+  .fa{
+    color:$primary-color;
+    background:#fff;
+    padding:4px;
+    border-radius:5px;
+    font-size:$icon-size;
+  }
+}
+
+#projects-section, #share-section{
+  .fa{
+    color:#fff;
+    background:#333;
+    padding:4px;
+    border-radius:5px;
+    font-size:$icon-size;
+  }
+
+  .cardpic{
+
+    height: 250px;
+  }
+}
+
+#create-section{
+  .fa{
+    color:$primary-color;
+    background:#fff;
+    padding:4px;
+    border-radius:5px;
+    font-size:$icon-size;
+  }
+}
+
+.imageresize{
+  width: 75px;
+  height: 75px;
+}
+
+.contactme{
+  display: inline-block;
+  padding: 20px;
+}
